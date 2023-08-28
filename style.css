@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 2rem;
+}
+
+html {
+  background-color: #04041f;
+  height: 100%;
+}
+
+.container {
+  max-width: 350px;
+  min-height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.todo-board {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #38bffd;
+}
+
+.todo-board h1 {
+  margin-bottom: 0.5rem;
+}
+
+.complete {
+  text-decoration: line-through;
+}
