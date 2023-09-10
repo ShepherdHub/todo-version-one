@@ -1,4 +1,4 @@
-# Conceptual Ideas
+# Long Term Ideas
 
 - Center the website around a calendar (conceptually and physically the calendar should be the majority of the screen)
 - Allow user to create buckets/task types
