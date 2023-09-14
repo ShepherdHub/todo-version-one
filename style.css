@@ -1,16 +1,21 @@
+:root {
+  --header-height: 2.5rem;
+  --color-primary: #ff5d5d;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-ul {
-  list-style-type: circle;
-  padding-left: 2rem;
+html {
+  background-color: #fff;
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-html {
-  background-color: #04041f;
+body {
   height: 100%;
 }
 
@@ -21,18 +26,65 @@ html {
   margin-right: auto;
 }
 
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  height: calc(100% - var(--header-height));
+}
 
-.todo-board {
+/* TVO Navigation Bar */
+.tvo-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  height: var(--header-height);
+  line-height: var(--header-height);
+  padding: 0 1rem;
+  background-color: var(--color-primary);
+  color: #FFF;
+}
+
+.tvo-nav-bar__group {
+  display: flex;
+}
+
+.tvo-nav-bar ul {
+  list-style: none;
+}
+
+.tvo-nav-bar li {
+  padding-right: 0.5rem;
+}
+
+.tvo-nav-bar li:last-child {
+  padding-right: 0;
+}
+
+/* TVO Side Bar */
+.tvo-side-bar {
+  background-color: #F2F2F2;
+  width: 300px;
+  height: 100%;
+}
+
+
+/* TVO Task Board */
+.tvo-task-board {
+  height: 100px;
   margin-top: 2rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  background-color: #38bffd;
+  border: 1px solid #38bffd;
 }
 
-.todo-board h1 {
+.tvo-task-board h1 {
   margin-bottom: 0.5rem;
 }
 
-.complete {
+.tvo-task-board ul {
+  list-style-type: circle;
+  padding-left: 2rem;
+}
+
+.tvo-task-board .complete {
   text-decoration: line-through;
 }
