@@ -1,5 +1,6 @@
 :root {
   --header-height: 2.5rem;
+  --color-primary: #ff5d5d;
 }
 
 * {
@@ -38,7 +39,7 @@ main {
   height: var(--header-height);
   line-height: var(--header-height);
   padding: 0 1rem;
-  background-color: #ff5d5d;
+  background-color: var(--color-primary);
   color: #FFF;
 }
 
